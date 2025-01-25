@@ -6,6 +6,9 @@ GEM
     aws-sdk-bedrock (1.34.0)
       aws-sdk-core (~> 3, >= 3.216.0)
       aws-sigv4 (~> 1.5)
+    aws-sdk-bedrockruntime (1.36.0)
+      aws-sdk-core (~> 3, >= 3.216.0)
+      aws-sigv4 (~> 1.5)
     aws-sdk-core (3.217.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
@@ -24,11 +27,16 @@ GEM
     aws-sigv4 (1.11.0)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.2.0)
+    coderay (1.1.3)
     dotenv (3.1.7)
     jmespath (1.6.2)
     logger (1.6.5)
+    method_source (1.1.0)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
+    pry (0.15.2)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     rack (3.1.8)
     rack-protection (4.1.1)
       base64 (>= 0.1.0)
@@ -52,9 +60,11 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk-bedrock
+  aws-sdk-bedrockruntime
   aws-sdk-s3
   aws-sdk-textract
   dotenv
+  pry
   sinatra
 
 RUBY VERSION
