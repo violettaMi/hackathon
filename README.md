@@ -1,10 +1,10 @@
-# Resume Parser POC (Pure Ruby / Sinatra)
+# Resume Parser POC
 
-This is a simple proof-of-concept application in pure Ruby (using the Sinatra microframework) that:
+This is a simple proof-of-concept application in Ruby (using the Sinatra microframework) that:
 
 1. Uploads a PDF resume to an S3 bucket
 2. Uses Amazon Textract to extract the text from the PDF
-3. Calls an AWS Bedrock foundation model to parse the text into JSON
+3. Calls an AWS Bedrock foundation model to parse the text into JSON and display it
 
 ## Prerequisites
 
@@ -13,13 +13,18 @@ This is a simple proof-of-concept application in pure Ruby (using the Sinatra mi
   - Read/Write to S3
   - Use Amazon Textract
   - Use AWS Bedrock
-- An existing S3 bucket (replace my-resume-poc-uploads with your bucket name in `app.rb`)
+- An existing S3 bucket.
 
 ## Setup
 
 1. Install Dependencies:
-
    ```bash
    bundle install
+   ```
+2. Run the application
+   ```bash
+   ruby app.rb
+   ```
+   
 
 
